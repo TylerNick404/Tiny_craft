@@ -1,3 +1,2 @@
 ursina
 perlin_noise
-numpy
