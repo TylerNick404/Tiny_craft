@@ -1,63 +1,62 @@
-# ◼️ TINY-CRAFT 1 ◼️ 
+# ◼️ TINY-CRAFT v1.5.0 ◼️ 
 
 ## DESCRIPTION:
-* Tiny-craft is a firstperson game created by python's ursina library. This game is similar to Minecraft, but a smaller version.
-  You can build whatever you want in this game. the area is 60x60 blocks and the number of blocks you use is 10.
-  By the way, the number of blocks on the ground is 1. Day and night in the game changes depending on your system clock,
-  ie 6 AM to 8 PM is day and the rest is night. In addition, the game also has a cloud and a floor, if you want to add them to the game,
-  uncomment cloud() and gfool() in the main code. There is a logs.txt and what you do with the blocks is saved in the logs.txt,
-  but not in the game yet. So far the game has some bugs. 
-  
+TINY-craft is a lightweight, first-person sandbox game built in Python using the Ursina Engine. It provides a simple voxel building environment inspired by Minecraft, scaled down into an optimized, lightweight build. 
 
+The game features procedurally generated terrain, automatic real-time environment changes, and a fully functional save system.
 
-* "The game is always will be update!"
+### 🌟 What's New in v1.5.0:
+* **Procedural Terrain Generation:** Generates natural hills and valleys using Perlin Noise instead of flat terrain, complete with randomized Oak and Birch tree generation.
+* **Combined Chunk Mesh Rendering:** Divides the 96x96 world into 16x16 chunks. It utilizes chunk combining and caching techniques to render blocks as a single unified mesh, keeping draw calls low and maintaining high frame rates.
+* **Persistent Saving & Loading:** Your creations are no longer just saved to text logs! The game features a fully integrated save system that reads and writes your world state directly to a local JSON file (`world_save.json`), preserving your builds between game sessions.
+* **Dynamic Time of Day:** Automatically reads your system clock on startup to load either a bright day theme or an atmospheric night theme with adapted textures and a custom skybox.
+* **Stable Shading & Optimization:** Features coordinate-seeded block shading to eliminate visual flickering during block placement/removal, along with standardized asset paths for full compatibility across Windows, macOS, and Linux.
+
+---
 
 ## SCREENSHOTS:
-<img src="https://github.com/ToyirovDev/Tiny_craft/blob/main/Assets/screenshots/1.png">
-<img src="https://github.com/ToyirovDev/Tiny_craft/blob/main/Assets/screenshots/2.png">
-<img src="https://github.com/ToyirovDev/Tiny_craft/blob/main/Assets/screenshots/3.png">
+<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/Assets/screenshots/1.png" width="800">
+<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/Assets/screenshots/2.png" width="800">
+<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/Assets/screenshots/3.png" width="800">
 
-## KEYS:
-	WASD	- Player movement.
-	SPACE	- Jump.
-	F	- Hold 'F' ko'rish uchun fps.
-	R	- Press 'R' for respawn.
-	M	- Press 'M' for mute backmus.
-	G	- Press 'G' for unfullscreen.
-	
-	1	- Grass block.
-	2	- Stone block.
-	3	- Brick block.
-	4	- Dirt block.
-	5	- Wood block.
-	6	- Glass block.
-	7	- Obsidan block.
-	8	- Ice block.
-	9	- Sand block.
-	0	- White stone block.
+---
 
- ## Usage:
- First you need python. You must have both 'pip' and 'git' installed. You can also just download the repository if you don't have git.
+## CONTROLS:
 
- <b>Clone repository.</b> <p>
- ```python
- git clone https://github.com/ToyirovDev/Tiny_craft.git 
+### Player & Interaction
+* **WASD** - Move around
+* **Space** - Jump
+* **Left Ctrl** - Crouch (slow movement, slides under 1-block gaps)
+* **Left Click** - Place held block
+* **Right Click** - Mine / Break targeted block
+
+### System & Interface
+* **1 to 0** - Hotbar block selection (10 total block types)
+* **H** - Toggle block list HUD overlay
+* **M** - Toggle background music (Mute / Unmute)
+* **F** - Toggle FPS and performance counter
+* **R** - Respawn at map center
+* **G** - Exit fullscreen mode
+* **ESC** - Exit game
+
+---
+
+## USAGE & RUNNING:
+
+### Prerequisites:
+To run this game, you must have Python installed on your system. You will also need `git` and `pip` configured.
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/TylerNick404/Tiny_craft.git
+cd Tiny_craft
 ```
-<p>
-
- <b>Install requirements.</b> <p>
-```python
- pip install -r requirements.txt 
-```
-<p>
-
-<b>Run game. </b> <p>
-```python
- python Tiny-craft.py
+### 2. Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
-
-
-
-
-	
+### 3. Run the game:
+```bash
+python Tiny-craft.py
+```
