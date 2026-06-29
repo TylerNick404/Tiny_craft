@@ -15,9 +15,9 @@ The game features procedurally generated terrain, automatic real-time environmen
 ---
 
 ## SCREENSHOTS:
-<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/Assets/screenshots/1.png" width="800">
-<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/Assets/screenshots/2.png" width="800">
-<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/Assets/screenshots/3.png" width="800">
+<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/assets/screenshots/1.png" width="800">
+<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/assets/screenshots/2.png" width="800">
+<img src="https://github.com/TylerNick404/Tiny_craft/blob/main/assets/screenshots/3.png" width="800">
 
 ---
 
